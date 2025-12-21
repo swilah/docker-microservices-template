@@ -31,19 +31,64 @@ Production-ready microservices architecture demonstrating Docker best practices 
 ## Architecture
 
 ```mermaid
-graph TB
-    Client[Client Browser]
-    Nginx[Frontend - Nginx]
-    API[API Service - FastAPI]
-    DB[(PostgreSQL Database)]
-    Prometheus[Prometheus]
-    Grafana[Grafana]
+flowchart TB
+    subgraph Internet
+        Client[Client Browser]
+    end
 
-    Client -->|HTTP| Nginx
-    Nginx -->|Proxy /api| API
-    API -->|SQL| DB
-    API -->|Metrics| Prometheus
-    Prometheus -->|Visualize| Grafana
+    subgraph Docker Network
+        subgraph Frontend Layer
+            Nginx[Nginx<br/>Port: 3000<br/>Static Files + Reverse Proxy]
+        end
+
+        subgraph Application Layer
+            API[FastAPI Service<br/>Port: 8000<br/>REST API + Async]
+        end
+
+        subgraph Data Layer
+            DB[(PostgreSQL 15<br/>Port: 5432<br/>Persistent Volume)]
+        end
+
+        subgraph Observability
+            Prometheus[Prometheus<br/>Port: 9090<br/>Metrics Collection]
+            Grafana[Grafana<br/>Port: 3001<br/>Dashboards]
+        end
+    end
+
+    Client -->|HTTPS:443| Nginx
+    Nginx -->|Proxy /api/*| API
+    API -->|SQL Connection Pool| DB
+    API -->|/metrics endpoint| Prometheus
+    Prometheus -->|PromQL Queries| Grafana
+
+    style Nginx fill:#009639,color:#fff
+    style API fill:#009688,color:#fff
+    style DB fill:#336791,color:#fff
+    style Prometheus fill:#e6522c,color:#fff
+    style Grafana fill:#f46800,color:#fff
+```
+
+### Request Flow
+
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant N as Nginx
+    participant A as FastAPI
+    participant D as PostgreSQL
+    participant P as Prometheus
+
+    C->>N: GET /api/items
+    N->>A: Proxy Request
+    A->>D: SELECT * FROM items
+    D-->>A: Result Set
+    A-->>N: JSON Response
+    N-->>C: HTTP 200
+
+    loop Every 15s
+        P->>A: GET /metrics
+        A-->>P: Prometheus Metrics
+    end
 ```
 
 ## Features

